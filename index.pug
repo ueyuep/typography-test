@@ -4,10 +4,14 @@ html
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Typography Test
+    script (function(d) {var config = { kitId: 'aaq5fhf', scriptTimeout: 3000, async: true}, h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
     link(rel="stylesheet", href="./assets/styles/common.css")
-    script(src="./assets/scripts/cssbrowserselector.js") 
+    link(rel="stylesheet", href="./assets/styles/main.css")
+    script(src="./assets/scripts/cssbrowserselector.js")
+    script(src="./assets/scripts/seokki-hangul-beta.js" defer)
   body
-    h1 List
-    div.list
-    a(href='./page/1' target='_self') Page
-    a(href='./page/2' target='_self') Page
+    #container
+      h1.tt List
+      div.list
+        a(href='./page/1' target='_self').tt Noto Sans KR + Kranto Display
+        a(href='./page/2' target='_self').tt No Name

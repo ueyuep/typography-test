@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "custom glyphs";
+  font-weight: 400;
+  src: url("../../page/1/fonts/custom-glyphs.woff2") format("woff2");
+  src: url("../../page/1/fonts/custom-glyphs.woff") format("woff");
+}
+#container {
+  max-width: 900px;
+  padding: 40px 16px;
+  margin: 0 auto;
+  font-family: "custom glyphs", "kranto-display", "noto-sans-cjk-kr", sans-serif;
+  text-align: center;
+}
+#container h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+#container .list {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#container .list a {
+  padding-bottom: 0px;
+  margin: 0 auto 6px;
+  border-bottom: solid 1.6px transparent;
+  font-size: 14px;
+}
+#container .list a:hover {
+  border-bottom: solid 1.6px #000;
+}
+
+.tt {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  word-spacing: 0.012em;
+}
+.tt .ff {
+  font-weight: 400;
+  position: relative;
+  bottom: 0.035em;
+  font-size: 90%;
+  line-height: 1;
+}
